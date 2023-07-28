@@ -1,0 +1,33 @@
+{
+    "model_name": "t2v_w_all",
+    "proj_dir": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/t2v_w_all",
+    "run_name": "w_all_t2v_final",
+    "data": {
+        "dir": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/data",
+        "movie_lens": "$dir/ml20m.csv",
+        "checkpoint": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/t2v_w_all/checkpoints/w_all_t2v_final/epoch=94-step=170145.ckpt"
+    },
+    "hparams": {
+        "batch_size": "128",
+        "num_blocks": "2", 
+        "hidden_dim": "50",
+        "dropout_rate": "0.2",
+        "split_prop": "0.15",
+        "split_range": "14", 
+        "pos_num": "16",
+        "negs_ppos": "50", 
+        "l2_emb": "0.00005", 
+        "max_seq_length": "50",
+        "num_heads": "1", 
+        "k_metric": "10", 
+        "epochs": "100",
+        "lr": "0.001",
+        "cycling_ratio": "2", 
+        "weight_decay" : "0.0",
+        "model_checkpt": null,
+        "save_dir": "$proj_dir/checkpoints"
+    },
+    "accelerator": "mps", 
+    "devices": 1,
+    "n_workers": 2
+}
